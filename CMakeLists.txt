@@ -17,6 +17,7 @@ option(USE_WLROOTS_GIT "Use wlroots git version" OFF)
 option(QWLROOTS_USE_PERCOMPILE_HEADERS "Use precompile headers to build qwlroots" OFF)
 option(DISABLE_WLR_PROTOCOLS "Disable support for wlr protocols, such as wlr-layer-shell" OFF)
 option(DISABLE_XWAYLAND "Disable the xwayland support" OFF)
+option(STATIC_BUILD_INTEGRATION "Integration static building qwlroots with parent projects" ON)
 
 if(PREFER_QT_5)
     find_package(QT NAMES Qt5 REQUIRED COMPONENTS Core)

@@ -1,6 +1,11 @@
 set(TARGET qwlroots)
-set(CMAKE_NAME ${CMAKE_PROJECT_NAME})
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+if (STATIC_BUILD_INTEGRATION)
+    set(CMAKE_NAME QWlroots)
+else()
+    set(CMAKE_NAME ${CMAKE_PROJECT_NAME})
+endif()
 
 add_compile_options(-Wall -Wextra -Werror=unused-variable -Werror=unused-parameter)
 
